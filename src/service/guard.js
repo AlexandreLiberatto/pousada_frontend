@@ -10,7 +10,7 @@ export const ProtectedRoute = ({ element: Component }) => {
   return ApiService.isAuthenticated() ? (
     Component
   ) : (
-    <Navigate to="/login" replace state={{ from: location }} />
+      <Navigate to="/login" replace state={{ from: location }} />
   );
 };
 
